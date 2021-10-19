@@ -1,0 +1,11 @@
+#version 300 es
+out highp vec4 fragColor;
+
+in highp vec3 vertexColor;
+in highp vec2 texCoord;
+
+uniform sampler2D inputTexture;
+
+void main() {
+    fragColor = texture(inputTexture, texCoord);
+}
